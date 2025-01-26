@@ -1,0 +1,10 @@
+These are the Main Components.
+
+navbar
+landing page
+marquee
+about playfull 
+cards section
+mini cards section
+ready to start section
+footer
