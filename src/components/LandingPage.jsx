@@ -1,15 +1,17 @@
  import React from 'react'
  import { FaArrowUpLong } from "react-icons/fa6";
+ import {motion} from "framer-motion"
  
  const LandingPage = () => {
+  
    return (
-     <div className='w-full h-screen  pt-1 bg-zinc-900'>
+     <div data-scroll data-scroll-speed="-.3" className='w-full h-screen  pt-1 bg-zinc-900'>
      <div className="textStructure  mt-40 px-20">
       {["We create", "eye opening", "presentations"].map((item, index)=>(
            <div className="masker bg-red   ">
             <div className='w-fit flex items-end overflow-hidden'>
             {index === 1 && (
-              <div className='w-[9vw] h-[5vw] relative   top-[-.1vw] bg-green-500 '>  </div>
+              <motion.div initial={{width:0}} animate={{width:"9vw"}} transition={{ease:[0.76, 0, 0.24, 1], duration:1}} className='w-[9vw] h-[5vw]  relative   top-[-.1vw]  '> <img src="https://images.pexels.com/photos/248747/pexels-photo-248747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /> </motion.div>
               )}
             
             <h1 className='uppercase  text-8xl leading-[6vw] tracking-tighter font-semibold font-["Founders Grotesk_X-Condensed"]'>

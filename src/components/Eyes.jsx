@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import React, { useEffect, useState } from 'react'
 
 const Eyes = () => {
@@ -19,8 +20,9 @@ const Eyes = () => {
     })
 
   return (
+    
     <div className='eyes w-full h-screen overflow-hidden'>
-     <div className='w-full  bg-cover bg-center relative h-full bg-[url(https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg)]'>
+     <div  data-scroll data-scroll-speed="-.7" className='w-full  bg-cover bg-center relative h-full bg-[url(https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg)]'>
      <div className='absolute flex gap-11  top-1/2   left-1/2 -translate-x-[50%] -translate-y-[50%]'>
      <div className='w-[15vw]  flex items-center justify-center h-[15vw] rounded-full bg-zinc-100'>
      <div className='w-2/3 h-2/3 relative items-center justify-center rounded-full bg-zinc-900'>
